@@ -5,17 +5,17 @@ function App() {
   const photos = useFetch("https://jsonplaceholder.typicode.com/photos");
 
   return (
-    <><div className="bg-black min-h-screen text-white">
+    <>
+    <div className="bg-black min-h-screen text-white">
       <h1 className="text-center text-3xl font-bold py-5">
         Photos
       </h1>
 
       <DataGrid title="Photos" {...photos} />
     </div>
-    <h1 className=" bg-amber-600text-center text-3xl font-bold py-5">
-        Photos
-      </h1></>
+    </>
   );
+  
 }
 
 export default App;
